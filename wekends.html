@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <title>S.No & Weekdays Table</title>
+</head>
+    <body>
+    <p>This table lists weekdays with serial numbers.</p>
+    <!-- TABLE starts -->
+     
+    <table border="1">
+        <!-- CAPTION gives the table a title for all users (and assistive tech) -->
+        <caption>Tab1: Weekdays</caption>
+        <!-- COLGROUP lets you define columns (even if not styled) -->
+        <colgroup>
+            <col><!-- S.No column -->
+            <col><!-- Weekday column -->
+        </colgroup>
+        <!-- THEAD contains column headers -->
+        <thead>
+            <tr>
+                <!-- scope="col" says this TH labels its column -->
+                <th scope="col">S.No</th>
+                <th scope="col">Weekday</th>
+            </tr>
+        </thead>
+        <!-- TBODY holds the main data rows -->
+        <tbody>
+            <!-- scope="row" says this TH labels the row (row header) -->
+            <tr><th scope="row">1</th><td>Monday</td></tr>
+            <tr><th scope="row">2</th><td>Tuesday</td></tr>
+            <tr><th scope="row">3</th><td>Wednesday</td></tr>
+            <tr><th scope="row">4</th><td>Thursday</td></tr>
+            <tr><th scope="row">5</th><td>Friday</td></tr>
+            <tr><th scope="row">6</th><td rowspan="2">Weekend</td></tr>
+            <tr><th scope="row">7</th></tr>
+        </tbody>
+        <!-- TFOOT is great for totals/summaries -->
+        <tfoot>
+        <tr>
+            <!-- colspan merges the two cells for a centered summary -->
+            <td colspan="2">Total days listed: 7</td>
+        </tr>
+        </tfoot>
+    </table>
+    </body>
+</html>
